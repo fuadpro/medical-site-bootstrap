@@ -1,0 +1,96 @@
+:root { --blue: #6bc2f1; }
+header { background:  url('../img/headerbg.jpg') center/cover; }
+.feature1 { background: url('../img/img1.jpg') center/cover }
+.feature2 { background: url('../img/img2.jpg') center/cover }
+.feature1:hover, .feature2:hover { opacity: .5 }
+.feature1:hover .more, .feature2:hover .more { display: initial!important }
+
+.bg-transp80 { background-color: #ffffffcc  }
+.bg-mavi { background-color: var(--blue) }
+.bg-silver { background: #f1f1f1 }
+.bg-dark-blue { background: #072035 }
+.text-mavi { color: var(--blue) }
+.text-silver { color: #d1cbcb }
+.vh-50 { min-height: 50vh;}
+.pb15{
+	padding-bottom: 15px;
+}
+.bg-white .card img{
+	width: 75px;
+	height: 75px;
+	justify-content: center;
+	align-items: center;
+}
+
+.testimonial-slide .carousel-item{
+	min-height: 70vh;
+	position: relative;
+	z-index: 2;
+}
+.testimonial-slide .carousel-item .carousel-container{
+	position: absolute;
+	left: 50%;
+	top:40%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.testimonial-slide .carousel-item h2{
+	font-size: 100px;
+	letter-spacing: 3px;
+	color: #fff;
+	margin:0 0 10px;
+}
+.testimonial-slide .carousel-item h3{
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	color: #fff;
+	margin:0 0 10px;
+}
+.testimonial-slide .carousel-item h4{
+	font-size: 13px;
+	font-weight: 300;
+	opacity: 0.702;
+	color: #fff;
+	margin:0 0 10px;
+}
+.testimonial-slide .carousel-item p{
+	font-size: 16px;
+	margin:0;
+	color: #eeeeee;
+}
+.testimonial-slide .carousel-controls{
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	z-index: 10;
+	transform: translateX(-50%);
+}
+.testimonial-slide .carousel-indicators{
+	position: relative;
+	margin:0;
+}
+.testimonial-slide .carousel-indicators li{
+	height: 70px;
+	width: 70px;
+	margin:0 5px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	transition: all 0.3s ease;
+	opacity: 70%;
+}
+.testimonial-slide .carousel-indicators li.active{
+	border:3px solid #fff;
+	transform: scale(1.2);
+	opacity: 100%;
+}
+.testimonial-slide .carousel-control-next img, .testimonial-slide .carousel-control-prev img{
+   width: 30px;
+}
+.testimonial-slide .carousel-control-next{
+	right: -60px;
+}
+.testimonial-slide .carousel-control-prev{
+	left: -60px;
+}
